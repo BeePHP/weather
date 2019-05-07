@@ -1,0 +1,34 @@
+{
+    "name": "beesoft/weather",
+    "description": "Weather",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "behero",
+            "email": "beherochuling@163.com"
+        },
+        {
+            "name": "beephp",
+            "email": "beherochuling@sina.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beesoft\\Weather\\": "src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1",
+        "mockery/mockery": "^1.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Beesoft\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
