@@ -2,6 +2,7 @@
 
 <p align="center"> Weather.</p>
 
+[![Build Status](https://travis-ci.org/beherochuling/weather.svg?branch=master)](https://travis-ci.org/beherochuling/weather)
 
 ## Installing
 
