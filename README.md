@@ -1,4 +1,3 @@
-
 <h1 align="center">Weather</h1>
 
 <p align="center">:rainbow: 基于高德开放平台的 PHP 天气信息组件。</p>
@@ -6,11 +5,13 @@
 [![Build Status](https://travis-ci.org/beesoft/weather.svg?branch=master)](https://travis-ci.org/beesoft/weather) 
 [![StyleCI build status](https://github.styleci.io/repos/144818004/shield)](https://github.styleci.io/repos/144818004)
 
+
 ## 安装
 
 ```sh
 $ composer require beesoft/weather -vvv
 ```
+
 
 ## 配置
 
@@ -20,7 +21,7 @@ $ composer require beesoft/weather -vvv
 ## 使用
 
 ```php
-use Overtrue\Weather\Weather;
+use Beesoft\Weather\Weather;
 
 $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
