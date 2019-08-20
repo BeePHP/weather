@@ -32,11 +32,14 @@ class Weather {
             throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
+        $format = \strtolower($format);
+        $type = \strtolower($type);
+
         $query = array_filter([
             'key' => $this->key,
             'city' => $city,
             'output' => $format,
-            'extensions' =>  $type,
+            'extensions' => $type,
         ]);
 
         try {
@@ -49,5 +52,15 @@ class Weather {
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
     }
-}
 
+    public function getLiveWeather($city, $format = 'json') {
+        return $this->getWeather($city, 'base', $format);
+    }
+    public function getForecastsWeather($city, $format = 'json') {
+        return $this->getWeather($city, 'all', $format);
+    }
+}
+// https://restapi.amap.com/v3/weather/weatherInfo?key=8a551017d33d8a2630b7ff569bb6f229&city=420115&output=json&extensions=all
+// https://restapi.amap.com/v3/weather/weatherInfo?
+// extensions=base|all
+// output=json|xml
