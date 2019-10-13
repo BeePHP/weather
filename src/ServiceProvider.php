@@ -1,5 +1,5 @@
 <?php
-namespace Beesoft\Weather;
+namespace Beesoft\API;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider {
     protected $defer = true;

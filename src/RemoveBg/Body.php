@@ -1,5 +1,5 @@
 <?php
-namespace Beesoft\Weather;
+namespace Beesoft\API\RemoveBg;
 
 use GuzzleHttp\Client;
 
@@ -60,7 +60,3 @@ class Weather {
         return $this->getWeather($city, 'all', $format);
     }
 }
-// https://restapi.amap.com/v3/weather/weatherInfo?key=8a551017d33d8a2630b7ff569bb6f229&city=420115&output=json&extensions=all
-// https://restapi.amap.com/v3/weather/weatherInfo?
-// extensions=base|all
-// output=json|xml

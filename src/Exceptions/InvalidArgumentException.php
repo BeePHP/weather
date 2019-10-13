@@ -1,5 +1,4 @@
 <?php
-namespace Beesoft\Weather\Exceptions;
+namespace Beesoft\API\Exceptions;
 
-class InvalidArgumentException extends Exception {
-}
+class InvalidArgumentException extends Exception {}

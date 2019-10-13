@@ -1,5 +1,4 @@
 <?php
-namespace Beesoft\Weather\Exceptions;
+namespace Beesoft\API\Exceptions;
 
-class Exception extends \Exception {
-}
+class Exception extends \Exception {}
